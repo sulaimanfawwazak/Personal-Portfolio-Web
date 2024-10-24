@@ -19,7 +19,7 @@ const Footer = () => {
           <motion.a 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.2, delay: index * 0.5}}
+            transition={{ duration: 0.5, delay: index * 0.2}}
             key={index} href={link.href} target='_blank' rel='noopener noreferer'>
             {link.icon}
           </motion.a>
