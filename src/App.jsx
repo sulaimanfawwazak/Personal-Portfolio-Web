@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Bio from './components/Bio'
 import Skills from './components/Skills'
+import WorkExperiences from './components/WorkExperiences'
+import Educations from './components/Educations'
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Projects/>
         <Bio/>
         <Skills/>
+        <WorkExperiences/>
+        <Educations/>
       </div>
     </div>
   )
