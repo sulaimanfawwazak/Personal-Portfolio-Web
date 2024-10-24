@@ -9,7 +9,11 @@ const Hero = () => {
 
       {/* Texts */}
       {/* Make full screen in mobile and 1/2 the width in desktop */}
-      <div className='w-full md:w-1/2'>
+      <motion.div 
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className='w-full md:w-1/2'>
       
         {/* Name */}
         <h2 className='my-8 p-2 text-4xl font-bold md:text-5xl lg:text-[7rem]'>
@@ -23,15 +27,23 @@ const Hero = () => {
         <p className='p-2 mb-8 text-xl'>
           {HERO.description}
         </p>
-      </div>
+      </motion.div>
 
       {/* Image */}
       {/* Make full screen in mobile and 1/2 the width in desktop */}
-      <div className='w-full md:w-1/2 lg:p-8'>
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className='w-full md:w-1/2 lg:p-8'>
         <div className='flex justify-center'>
-          <img src={carlImg} width={550} height={550} alt='Carl Frank' className='rounded-3xl'/>
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            src={carlImg} width={550} height={550} alt='Carl Frank' className='rounded-3xl'/>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
