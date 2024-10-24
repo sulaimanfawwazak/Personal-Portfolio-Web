@@ -25,8 +25,8 @@ export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
   { label: "Bio", href: "#bio" },
   { label: "Skills", href: "#skills" },
-  { label: "Work Experience", href: "#work" },
-  { label: "Education", href: "#education" },
+  { label: "Work Experience", href: "#experiences" },
+  { label: "Educations", href: "#educations" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -151,7 +151,7 @@ export const EXPERIENCES = [
   },
 ];
 
-export const EDUCATION = [
+export const EDUCATIONS = [
   {
     degree: "Master of Science in Computer Science",
     institution: "Stanford University",
