@@ -1,6 +1,7 @@
-import React from 'react'
-import { HERO } from '../constants'
-import carlImg from '../assets/carl.jpeg'
+import React from 'react';
+import { HERO } from '../constants';
+import { motion } from 'framer-motion';
+import carlImg from '../assets/carl.jpeg';
 
 const Hero = () => {
   return (
