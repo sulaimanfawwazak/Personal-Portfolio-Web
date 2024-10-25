@@ -14,12 +14,10 @@ import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 
-import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { SiGmail } from "react-icons/si";
+import { FcLinux } from "react-icons/fc";
+import 'devicon/devicon.min.css';
+
 
 export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
@@ -31,10 +29,10 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const HERO = {
-  name: "CARL FRANK",
+  name: "Sulaiman Fawwaz",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.",
+    "I am an undergraduate Information Engineering student interested in Computer Vision, Data Engineering, Cyber Security, and Softaware Engineering. I like to take on challenging tasks to sharpen my skills.",
 };
 
 export const PROJECTS = [
@@ -89,80 +87,100 @@ export const PROJECTS = [
 ];
 
 export const BIO = [
-  "Carl Frank studied computer science at the University of Technology,from which he graduated in 2010. Following his education, he honed his craft and expertise over the course of 10 years at Tech Innovations Inc., where he immersed himself in the world of frontend development.",
-  "In 2021, driven by a shared vision for innovative web solutions and a passion for creating extraordinary user experiences Carl Frank co-founded WebArtistry alongside his creative partner, Jane Doe. Together, they set out to redefine frontend development, infusing their projects with creativity and cutting-edge technology.",
-  "As a multi-disciplinary frontend developer, Carl Frank brings a wealth of skills and expertise to his work. From his deep understanding of HTML, CSS, and JavaScript to his proficiency in modern frameworks like React and Vue.js, Carl Frank possesses a versatile skill set that allows him to craft stunning and unforgettable web experiences for his clients and audiences alike.",
+  "Fawwaz is an Information Engineering undergraduate at Universitas Gadjah Mada, one of the most prestigious universities in Indonesia. He is passionate about diverse fields, such as Computer Vision, Data Engineering, Internet of Things (IoT), Cyber Security, and Software Engineering. He has many hands-on experiences regarding to those fields, such as being a Front-end Developer for his deparment's lustrum celebration, problem setter for Capture The Flag competitions, and many more.",
+  "Beyond his technical expertise, Fawwaz has a strong interest in music. He plays guitar and several brass instruments, like the trumpet and mellophone, thanks to his involvemenet in his junior high school's marching band, Waditra Prima Sangatta (WPS), which led his team to victory in the Grand Prix Marching Band (GPMB) XXXV 2019.",
+  "He's currently working as a Vision and Control Programmer at GAMAFORCE (Gadjah Mada Flying Object Research Center), a student-led research group focusing on Unmanned Aerial Vehicles (UAV). As a part of the Ground Control Station (GCS) sub-team, he focuses on research in Computer Vision and Artificial Intelligence.",
 ];
 
 export const SKILLS = [
   {
-    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+    icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" className="w-9 lg:w-12"/>
+    ,
+    name: "Python",
+    experience: "3+ year",
+  },
+  {
+    icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" className="w-9 lg:w-12"/>,
+    name: "C++",
+    experience: "2+ years",
+  },
+  {
+    icon: <FcLinux className="text-4xl lg:text-5xl" />,
+    name: "Linux",
+    experience: "2+ years",
+  },
+  {
+    icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" className="w-9 lg:w-12"/>,
+    name: "JavaScript",
+    experience: "1+ year",
+  },
+  {
+    icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" className="w-9 lg:w-12"/>,
+    name: "OpenCV",
+    experience: "1+ year",
+  },
+  {
+    icon: <i class="devicon-tensorflow-original colored text-4xl lg:text-5xl"></i>,
+    name: "Tensorflow",
+    experience: "1+ year",
+  },
+  {
+    icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" className="w-9 lg:w-12"/>,
     name: "React",
-    experience: "2+ years",
-  },
-  {
-    icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-    name: "Next.js",
     experience: "1+ year",
   },
   {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "MongoDB",
-    experience: "1.5+ years",
-  },
-  {
-    icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-    name: "Redis",
+    icon: <i class="devicon-ros-original text-4xl lg:text-5xl"></i>,
+    name: "ROS",
     experience: "1+ year",
   },
-  {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Node.js",
-    experience: "2+ years",
-  },
-  {
-    icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
-    name: "PostgreSQL",
-    experience: "1+ year",
-  },
+
 ];
 
 export const EXPERIENCES = [
   {
-    title: "Lead Frontend Developer",
-    company: "Innovative Tech Solutions",
-    duration: "July 2020 - Present",
+    title: "Vision and Control Programmer",
+    company: "GAMAFORCE",
+    duration: "December 2023 - Present",
     description:
-      "As the Lead Frontend Developer, I spearheaded the development of advanced web applications using cutting-edge technologies like React, Redux, and TypeScript. I worked closely with cross-functional teams, including designers, product managers, and backend developers, to deliver seamless and high-performance user experiences.",
+      "As a Vision Control Programmer at GAMAFORCE, I am responsible for conducting research on Computer Vision and Artificial Intelligence, and their applications in Unmanned Aerial Vehicles (UAVs). This involves exploring foundational theories and developing algorithms for UAV systems. I also have experience working with Robot Operating System (ROS) and Gazebo to run simulations, helping integrate vision-based solutions into UAV control systems.",
   },
   {
-    title: "Frontend Engineer",
-    company: "Digital Creations",
-    duration: "February 2016 - June 2020",
+    title: "Frontend Developer",
+    company: "DTETI FT UGM",
+    duration: "June 2023 - November 2023",
     description:
-      "At Digital Creations, I focused on building highly interactive and responsive web interfaces using HTML, CSS, JavaScript, and modern libraries like React. I collaborated closely with UX/UI designers to implement design changes that enhanced user engagement and satisfaction. My role involved optimizing website performance, ensuring cross-browser compatibility, and implementing SEO best practices. ",
+      "Developed the front-end sections of the Lustrum XII DTETI website using React and TailwindCSS. My work focused on delivering responsive and dynamic web interfaces to showcase the event and its activities.",
   },
   {
-    title: "Junior Web Developer",
-    company: "Bright Future Technologies",
-    duration: "August 2014 - January 2016",
+    title: "Tutor Assitant",
+    company: "DTETI FT UGM",
+    duration: "August 2023 - June 2024",
     description:
-      "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
+      "Served as a tutor for the Linear Algebra course, teaching key concepts such as eigenvalues, eigenvectors, diagonalization, and complex matrices. Additionally, I assisted in the Matrix and Vector Theories class, guiding students through topics like linear equations, singular and non-singular systems, Gauss-Jordan elimination, and orthogonality/orthonormality.",
   },
+  {
+    title: "Staff of Event Division",
+    company: "FindIT! UGM",
+    duration: "November 2022 - June 2023",
+    description:
+      "As a member of the Event Division for FindIT! UGM, an IT competition event, I was responsible for planning and organizing the overall event. My role included designing timelines, selecting themes, and coordinating competitions such as Capture The Flag (CTF), Competitive Programming, and Hackathons.",
+  },
+
 ];
 
 export const EDUCATIONS = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    duration: "September 2012 - June 2014",
+    degree: "Bachelor of Engineering in Information Engineering",
+    institution: "Universitas Gadjah Mada",
+    duration: "August 2022 - Present",
     description:
       "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
   },
   {
-    degree: "Bachelor of Science in Information Technology",
-    institution: "University of California, Berkeley",
-    duration: "September 2008 - June 2012",
+    degree: "Natural Sciences Major",
+    institution: "SMAN 1 Balikpapan",
+    duration: "August 2020 - June 2022",
     description:
       "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
   },
@@ -170,27 +188,19 @@ export const EDUCATIONS = [
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
-    icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
-    icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
+    href: "https://instagram.com/sfawwazak",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
-    icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://github.com/",
+    href: "https://github.com/sulaimanfawwazak",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/sfawwazak/",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+  },
+  {
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=sulaimanfawwazak@gmail.com&su=SUBJECT&body=BODY",
+    icon: <SiGmail fontSize={25} className="hover:opacity-80" />,
   },
 ];

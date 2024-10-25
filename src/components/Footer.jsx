@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/sf-logo.png';
 import { SOCIAL_MEDIA_LINKS } from '../constants';
 import { motion } from 'framer-motion';
 
@@ -12,7 +12,8 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          src={logo} width={200} className='my-20'/>
+          // src={logo} width={200} className='my-20'/>
+          src={logo} width={150} className='my-20'/>
       </div>
       <div className='flex items-center justify-center gap-8'>
         {SOCIAL_MEDIA_LINKS.map((link, index) => (

@@ -45,12 +45,20 @@ const ContactForm = () => {
       setIsSending(true);
 
       emailjs
+      // This doesn't work
         .send(
-          'service_1ga3od2',  // Service ID
-          'template_3gip6aa', // Template ID
-          formData,           // Form Data
-          'QgHDxDAwpRkDtWTtd' // Public Key
+          import.meta.env.VITE_SERVICE_ID,   // Service ID
+          import.meta.env.VITE_TEMPLATE_ID,  // Template ID
+          formData,                 // Form Data
+          import.meta.env.VITE_PUBLIC_KEY    // Public Key
         )
+      // This works, but I have to give my credentials directly in here
+        // .send(
+          // 'service_1ga3od2',   // Service ID
+          // 'template_3gip6aa',  // Template ID
+          // formData,                 // Form Data
+          // 'QgHDxDAwpRkDtWTtd'    // Public Key
+        // )
         .then((response) => {
           toast.success("Message sent successfully!");
           setFormData({ name: '', email: '', message: '' });

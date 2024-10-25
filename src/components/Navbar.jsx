@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/sf-logo.png'
 import { NAVIGATION_LINKS } from '../constants';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -30,14 +30,14 @@ const Navbar = () => {
   }
   return (
     <div>
-      <nav className='fixed left-0 right-0 z-50 top-4'>
+      <nav className='fixed top-0 left-0 right-0 z-50 lg:top-4'>
         {/* Desktop Menu */}
         <div className='items-center justify-center hidden max-w-2xl py-3 mx-auto border rounded-lg border-stone-50/30 bg-black/20 backdrop-blur-lg lg:flex'>
-          <div className='flex items-center justify-between gap-6'>
+          <div className='flex items-center justify-between gap-24'>
             {/* Logo Div */}
             <div>
               <a href='#'>
-                <img src={logo} width={150} alt='logo'/>
+                <img src={logo} width={32} alt='logo'/>
               </a>
             </div>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
             {/* Logo */}
             <div>
               <a>
-                <img src={logo} width={90} className='m-2'/>
+                <img src={logo} width={32} className='m-2'/>
               </a>
             </div>
             {/* Menus */}

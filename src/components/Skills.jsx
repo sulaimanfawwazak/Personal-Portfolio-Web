@@ -35,7 +35,7 @@ const Skills = () => {
   return (
     <div className='container mx-auto' id='skills'>
       {/* Title */}
-      <h2 className='mt-20 mb-12 text-4xl font-semibold text-center'>Skills</h2>
+      <h2 className='mt-20 mb-12 text-4xl font-bold text-center'>Skills</h2>
 
       {/* Skills Start */}
       <motion.div 
