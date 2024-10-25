@@ -2,6 +2,7 @@ import React from 'react';
 import { HERO } from '../constants';
 import { motion } from 'framer-motion';
 import carlImg from '../assets/carl.jpeg';
+import Terminal from './Terminal';
 
 const Hero = () => {
   return (
@@ -29,20 +30,15 @@ const Hero = () => {
         </p>
       </motion.div>
 
-      {/* Image */}
+      {/* Terminal */}
       {/* Make full screen in mobile and 1/2 the width in desktop */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className='w-full md:w-1/2 lg:p-8'>
-        <div className='flex justify-center'>
-          <motion.img
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            src={carlImg} width={550} height={550} alt='Carl Frank' className='rounded-3xl'/>
-        </div>
+        className='w-full md:w-1/2'>
+          {/* Terminal */}
+        <Terminal/>
       </motion.div>
     </section>
   )
