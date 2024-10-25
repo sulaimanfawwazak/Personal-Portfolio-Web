@@ -36,7 +36,7 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className='w-full md:w-1/2'>
+        className='w-full pl-10 md:w-1/2'>
           {/* Terminal */}
         <Terminal/>
       </motion.div>

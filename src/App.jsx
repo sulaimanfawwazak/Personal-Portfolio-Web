@@ -4,10 +4,10 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Bio from './components/Bio'
 import Skills from './components/Skills'
-import WorkExperiences from './components/WorkExperiences'
 import Educations from './components/Educations'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
+import Experiences from './components/Experiences'
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
         <Projects/>
         <Bio/>
         <Skills/>
-        <WorkExperiences/>
+        <Experiences/>
         <Educations/>
         <ContactForm/>
         <Footer/>

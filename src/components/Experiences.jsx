@@ -2,7 +2,7 @@ import React from 'react';
 import { EXPERIENCES } from '../constants';
 import { motion } from 'framer-motion';
 
-const WorkExperiences = () => {
+const Experiences = () => {
   return (
     <section className='pt-20' id='experiences'>
       {/* Title */}
@@ -12,7 +12,7 @@ const WorkExperiences = () => {
         transition={{ duration: 1 }}
         className='text-4xl font-bold tracking-tighter text-center'
         >
-          Work Experiences
+          Experiences
       </motion.h2>
 
       {/* Experiences Start */}
@@ -38,4 +38,4 @@ const WorkExperiences = () => {
   )
 }
 
-export default WorkExperiences
+export default Experiences;

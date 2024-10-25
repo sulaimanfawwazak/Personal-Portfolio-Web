@@ -7,7 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "jetbrains": ["JetBrains Mono", "monospace"]
+        jetbrains: ['"JetBrains Mono"', "monospace"]
+      },
+      fontWeight: {
+        jetbrainsRegular: 400,
+        jetbrainsSemibold: 600,
+        jetbrainsBold: 700,
+        jetbrainsBlack: 900,
       }
     },
   },
