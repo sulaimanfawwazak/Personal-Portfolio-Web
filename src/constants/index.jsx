@@ -13,6 +13,7 @@ import projectImage3 from "../assets/project3.jpeg";
 import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
+import projectLustrum from "../assets/projects-lustrum.png";
 
 import { SiGmail } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
@@ -41,7 +42,8 @@ export const PROJECTS = [
     name: "Personal Portfolio",
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
-    image: projectImage1,
+    // image: projectImage1,
+    image: projectLustrum,
     githubLink: "https://github.com/user/personal-portfolio",
   },
   {
