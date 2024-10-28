@@ -42,8 +42,8 @@ const Terminal = () => {
       command: 'cat about-me.txt',
       output: [
         'Hello 👋',
-        '\nFawwaz is an Information Engineering student at Universitas Gadjah Mada with a strong foundation in Computer Vision, Data Engineering, IoT, Cybersecurity, and Software Engineering 👾',
-        '\nHe has diverse hands-on experience, from front-end development to creating Capture The Flag problems. Currently, Fawwaz works as a Vision and Control Programmer at GAMAFORCE, a UAV-focused research group, specializing in Computer Vision and AI for their Ground Control Station team 🛩️',
+        '\nI am an Information Engineering undergraduate at Universitas Gadjah Mada with a strong foundation in Computer Vision, Data Engineering, IoT, Cybersecurity, and Software Engineering 👾',
+        '\nI have diverse hands-on experience, from front-end development to creating Capture The Flag problems. Currently, I work as a Vision and Control Programmer at GAMAFORCE, a UAV-focused research group, specializing in Computer Vision and AI for the Ground Control Station (GCS) team 🛩️',
         '\nDo know me better from:'
       ],
       type: true,
