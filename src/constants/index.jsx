@@ -13,7 +13,12 @@ import projectImage3 from "../assets/project3.jpeg";
 import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
-import projectLustrum from "../assets/projects-lustrum.png";
+import projectLustrum from "../assets/project-lustrum.png";
+import projectDataEngineeringKafka from "../assets/project-data-engineering-kafka.png";
+import projectErikaElia from "../assets/project-erika-elia.png";
+import projectCharminal from "../assets/project-charminal.png";
+import projectESPotify32 from "../assets/project-espotify32.png";
+import projectHandTrackingDino from "../assets/project-hand-tracking-dino.png";
 
 import { SiGmail } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
@@ -39,52 +44,52 @@ export const HERO = {
 export const PROJECTS = [
   {
     id: 1,
-    name: "Personal Portfolio",
+    name: "DTETI's XII Lustrum",
     description:
-      "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
+      "Website for my deparment's XII lustrum that involves many events, including independence day celebration, art performance, and competitions.",
     // image: projectImage1,
     image: projectLustrum,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://lustrumdteti.id/",
   },
   {
     id: 2,
-    name: "E-Commerce Platform",
+    name: "Charminal Python Library",
     description:
-      "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
-    image: projectImage2,
-    githubLink: "https://github.com/user/ecommerce-platform",
+      "My first ever Python library, with a goal to enhance the terminal output from a Python script. It offers colors and emojis to display the informations more interactive and charming!",
+    image: projectCharminal,
+    githubLink: "https://github.com/sulaimanfawwazak/Charminal",
   },
   {
     id: 3,
-    name: "Task Management Tool",
+    name: "ESP(otify)32: Spotify Controller with ESP32",
     description:
-      "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
-    image: projectImage3,
-    githubLink: "https://github.com/user/task-management-tool",
+      "A Spotify Controller using TFT touch screen and ESP32, utilizing the Spotify's API. Made the UI using SquareLine Studio.",
+    image: projectESPotify32,
+    githubLink: "https://github.com/sulaimanfawwazak/SBM-Final-Project-ESP32-Based-Spotify-Playback-Controller",
   },
   {
     id: 4,
-    name: "Weather App",
+    name: "Data Engineering Pipeline with Kafka and AWS",
     description:
-      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-    image: projectImage4,
-    githubLink: "https://github.com/user/weather-app",
+      "Data pipeline of a simulated real-world market data, built using Kafka and AWS services, such as EC2, S3, Glue Crawler, and Athena.",
+    image: projectDataEngineeringKafka,
+    githubLink: "https://github.com/sulaimanfawwazak/Data-Engineering-Kafka",
   },
   {
     id: 5,
-    name: "Blog Platform",
+    name: "ERIKA and ELIA Chatbot",
     description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
-    image: projectImage5,
-    githubLink: "https://github.com/user/blog-platform",
+      "Discord bots act like a customer service for Edus, an education startup in Indonesia. ERIKA is the predecessor of ELIA, where it's still uses regex, while ELIA is more advanced by using RAG.",
+    image: projectErikaElia,
+    githubLink: "https://github.com/sulaimanfawwazak/ELIA",
   },
   {
     id: 6,
-    name: "Chat Application",
+    name: "Hand Tracking Dino Game",
     description:
-      "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-    image: projectImage6,
-    githubLink: "https://github.com/user/chat-application",
+      "Script written in Python with the help of MediaPipe and OpenCV to enable players to play Dino Game with their hand gestures. Make a pinching gesture to make the Dino jump!",
+    image: projectHandTrackingDino,
+    githubLink: "https://github.com/sulaimanfawwazak/Hand-Gesture-Control-Dino-Game",
   },
 ];
 
@@ -202,7 +207,7 @@ export const SOCIAL_MEDIA_LINKS = [
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://mail.google.com/mail/?view=cm&fs=1&to=sulaimanfawwazak@gmail.com&su=SUBJECT&body=BODY",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=sulaimanfawwazak@gmail.com&su=ChangeThis&body=ChangeThisToo",
     icon: <SiGmail fontSize={25} className="hover:opacity-80" />,
   },
 ];

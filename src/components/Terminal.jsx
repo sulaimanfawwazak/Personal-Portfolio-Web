@@ -1,6 +1,17 @@
 // ########## THIS COMPONENTS IS CALLED IN THE "Hero.jsx" FILE ##########
 import React, { useEffect, useState, useRef } from 'react';
 
+import {
+  FaXTwitter,
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaDiscord,
+  FaInstagram,
+} from "react-icons/fa6";
+
+import { SiGmail } from 'react-icons/si';
+
 const Terminal = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [currentText, setCurrentText] = useState('');
@@ -11,7 +22,6 @@ const Terminal = () => {
     {
       prompt: 'fawwaz:~$ ',
       command: 'ls',
-      // output: ['Desktop', 'Documents', 'Downloads', 'Music', 'Pictures', 'Videos'],
       output: ['Desktop\t\tDocuments', 'Downloads\tMusic', 'Pictures\tVideos'],
       type: true
     },
@@ -30,8 +40,14 @@ const Terminal = () => {
     {
       prompt: 'fawwaz:~/Documents$ ',
       command: 'cat about-me.txt',
-      output: ['Hello 👋\n\nFawwaz is an Information Engineering student at Universitas Gadjah Mada with a strong foundation in Computer Vision, Data Engineering, IoT, Cybersecurity, and Software Engineering. He has diverse hands-on experience, from front-end development to creating Capture The Flag problems. A musician at heart, he plays guitar and brass instruments, inspired by his marching band success in junior high. Currently, Fawwaz works as a Vision and Control Programmer at GAMAFORCE, a UAV-focused research group, specializing in Computer Vision and AI for their Ground Control Station team.'],
-      type: true
+      output: [
+        'Hello 👋',
+        '\nFawwaz is an Information Engineering student at Universitas Gadjah Mada with a strong foundation in Computer Vision, Data Engineering, IoT, Cybersecurity, and Software Engineering 👾',
+        '\nHe has diverse hands-on experience, from front-end development to creating Capture The Flag problems. Currently, Fawwaz works as a Vision and Control Programmer at GAMAFORCE, a UAV-focused research group, specializing in Computer Vision and AI for their Ground Control Station team 🛩️',
+        '\nDo know me better from:'
+      ],
+      type: true,
+      showSocialLinks: true
     }
   ];
 
@@ -64,7 +80,6 @@ const Terminal = () => {
   }, [currentStep, currentText]);
 
   return (
-    // <div className="w-96 h-96">
     <div className="w-full">
       <div className="overflow-hidden bg-gray-900 rounded-lg shadow-lg font-jetbrainsBold font-jetbrains ">
         {/* Terminal Header */}
@@ -94,9 +109,25 @@ const Terminal = () => {
                 <span className="text-green-400">{step.prompt}</span>
                 <span className="text-white">{step.command}</span>
                 {step.output.map((line, i) => (
-                  // <div key={i} className="ml-1 text-gray-300">{line}</div>
-                  <div key={i} className={`ml-1 ${(index === 0? 'text-blue-600': 'text-gray-300')}`}>{line}</div>
+                  <div key={i} className={`ml-1 ${(index === 0 ? 'text-blue-600' : 'text-gray-300')}`}>{line}</div>
                 ))}
+
+                {/* Render social links conditionally */}
+                {step.showSocialLinks && (
+                  <div className="flex flex-col items-start mt-2 ml-2">
+                    <a href="https://www.linkedin.com/in/sfawwazak/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                      <FaLinkedin className="inline-block mr-1" /> LinkedIn
+                    </a>
+                    <a href="https://github.com/fawwazak" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
+                      <FaGithub className="inline-block mr-1" /> GitHub
+                    </a>
+                    <a href="https://instagram.com/sfawwazak" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-800">
+                      <FaInstagram className="inline-block mr-1" /> Instagram
+                    </a>
+
+                    {/* Add other social media links here */}
+                  </div>
+                )}
               </div>
             ))}
 
