@@ -24,7 +24,7 @@ export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
   { label: "Bio", href: "#bio" },
   { label: "Skills", href: "#skills" },
-  { label: "Work Experience", href: "#experiences" },
+  { label: "Experience", href: "#experiences" },
   { label: "Educations", href: "#educations" },
   { label: "Contact", href: "#contact" },
 ];
