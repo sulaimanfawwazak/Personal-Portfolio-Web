@@ -38,7 +38,7 @@ export const HERO = {
   name: "Sulaiman Fawwaz",
   greet: "Hello there! 👋🏻",
   description:
-    "I am an undergraduate Information Engineering student interested in Computer Vision, Data Engineering, Cyber Security, and Softaware Engineering. I like to take on challenging tasks to sharpen my skills.",
+    "I am an Information Engineering undergraduate at Universitas Gadjah Mada with an interest in Computer Vision, Data Engineering, IoT, Cybersecurity, and Software Engineering"
 };
 
 export const PROJECTS = [
