@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className='flex items-center justify-between gap-24'>
             {/* Logo Div */}
             <div>
-              <a href='#'>
+              <a href='#' onClick={(e) => handleLinkClick(e, '#hero')}>
                 <img src={logo} width={32} alt='logo'/>
               </a>
             </div>
@@ -57,11 +57,11 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className='rounded-lg backdrop-blur-md lg:hidden'>
+        <div className='rounded-lg rounded-b-lg backdrop-blur-md lg:hidden'>
           <div className='flex items-center justify-between'>
             {/* Logo */}
             <div>
-              <a>
+              <a href='#' onClick={(e) => handleLinkClick(e, '#hero')}>
                 <img src={logo} width={32} className='m-2'/>
               </a>
             </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
           </div>
           {isMobileMenuOpen && (
-            <ul className='flex flex-col gap-4 mt-4 ml-4 backdrop-blur-md'>
+            <ul className='flex flex-col gap-4 pb-4 mt-4 ml-4 backdrop-blur-md '>
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <a href={item.href} className='block w-full text-lg' onClick={(e) => handleLinkClick(e, item.href)}>

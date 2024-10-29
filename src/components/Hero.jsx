@@ -6,7 +6,7 @@ import Terminal from './Terminal';
 
 const Hero = () => {
   return (
-    <section className='flex flex-wrap items-center justify-center w-full min-h-screen md:px-5'>
+    <section className='flex flex-wrap items-center justify-center w-full min-h-screen md:px-5' id='hero'>
 
       {/* Texts */}
       {/* Make full screen in mobile and 1/2 the width in desktop */}
