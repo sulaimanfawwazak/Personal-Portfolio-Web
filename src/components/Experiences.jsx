@@ -10,7 +10,7 @@ const Experiences = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className='text-4xl font-bold tracking-tighter text-center'
+        className='text-4xl font-semibold tracking-tighter text-center'
         >
           Experiences
       </motion.h2>

@@ -9,7 +9,7 @@ const Educations = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className='mb-4 text-3xl font-bold text-center'>Educations</motion.h2>
+        className='mb-4 text-4xl font-semibold text-center'>Educations</motion.h2>
       {EDUCATIONS.map((education, index) => (
         <motion.div 
           initial={{ opacity: 0, x: -20 }}

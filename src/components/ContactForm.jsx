@@ -27,7 +27,7 @@ const ContactForm = () => {
     if (!formData.name) errors.name = "Name is required!";
     if (!formData.email) {
       errors.email = "Email is required!";
-    } else if (!/\S+@\S+\.\S/.test(formData.email)) {
+    } else if (!/^[\w.%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(formData.email)) {
       errors.email = "Email is invalid!";
     }
     if (!formData.message) errors.message = "Message is required!";
@@ -38,7 +38,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validate();
-    if (Object.keys(validationErrors) > 0) {
+    if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors); // Set the errors according to the validatio n
     } else {
       setErrors({}); // Empty the errors
@@ -91,7 +91,7 @@ const ContactForm = () => {
               <motion.p 
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}      
-                className='text-sm text-rose-800'
+                className='text-sm text-rose-700'
               >
                 {errors.name}
               </motion.p>
@@ -113,7 +113,7 @@ const ContactForm = () => {
               <motion.p 
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}      
-                className='text-sm text-rose-800'
+                className='text-sm text-rose-700'
               >
                 {errors.email}
               </motion.p>            )}

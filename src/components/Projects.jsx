@@ -11,7 +11,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: -20}}
         whileInView={{ opacity: 1, y: 0}}
         transition={{ duration: 0.8 }}
-        className='mb-8 text-4xl font-bold text-center lg:text-5xl'
+        className='mb-8 text-4xl font-semibold text-center lg:text-4xl'
         >
           Projects
       </motion.h2>
@@ -36,7 +36,7 @@ const Projects = () => {
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               className='absolute inset-0 flex flex-col items-center justify-center text-white transition-opacity duration-500 opacity-0 backdrop-blur-lg group-hover:opacity-100'>
-              <h3 className='mb-2 text-xl'>{project.name}</h3>
+              <h3 className='mb-2 text-xl font-semibold'>{project.name}</h3>
               <p className='p-4 mb-12'>{project.description}</p>
               <a href={project.githubLink} target='_blank' rel='noopener noreferer' className='px-4 py-2 text-black bg-white rounded-full hover:bg-gray-300'>
                 <div className='flex items-center'>

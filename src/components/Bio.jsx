@@ -9,7 +9,7 @@ const Bio = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className='text-4xl font-bold text-center lg:text-4xl'>Bio</motion.h2>
+        className='text-4xl font-semibold text-center lg:text-4xl'>Bio</motion.h2>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

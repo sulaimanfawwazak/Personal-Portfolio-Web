@@ -182,14 +182,14 @@ export const EDUCATIONS = [
     institution: "Universitas Gadjah Mada",
     duration: "August 2022 - Present",
     description:
-      "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
+      "Took part in several campus's events, such as FindIT! and Lustrum, and joined a student-led UAV research team, GAMAFORCE (Gadjah Mada Flying Object Research Center). Had experiences on data engineering, web development, cybersecurity, etc.",
   },
   {
-    degree: "Natural Sciences Major",
+    degree: "Natural Sciences Major - Acceleration Class",
     institution: "SMAN 1 Balikpapan",
     duration: "August 2020 - June 2022",
     description:
-      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and PHP. Completed a senior project on developing an e-commerce platform. Graduated with a high GPA.",
+      "Part of acceleration student, where I completed high school in just 2 years. Participated in competitions, ranging from chemistry to informatics olympiad.",
   },
 ];
 
