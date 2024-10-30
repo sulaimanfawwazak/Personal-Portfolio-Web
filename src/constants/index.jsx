@@ -44,12 +44,11 @@ export const HERO = {
 export const PROJECTS = [
   {
     id: 1,
-    name: "DTETI's XII Lustrum",
+    name: "Data Engineering Pipeline with Kafka and AWS",
     description:
-      "Website for my deparment's XII lustrum that involves many events, including independence day celebration, art performance, and competitions.",
-    // image: projectImage1,
-    image: projectLustrum,
-    githubLink: "https://lustrumdteti.id/",
+      "Data pipeline of a simulated real-world market data, built using Kafka and AWS services, such as EC2, S3, Glue Crawler, and Athena.",
+    image: projectDataEngineeringKafka,
+    githubLink: "https://github.com/sulaimanfawwazak/Data-Engineering-Kafka",
   },
   {
     id: 2,
@@ -69,11 +68,12 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    name: "Data Engineering Pipeline with Kafka and AWS",
+    name: "DTETI's XII Lustrum",
     description:
-      "Data pipeline of a simulated real-world market data, built using Kafka and AWS services, such as EC2, S3, Glue Crawler, and Athena.",
-    image: projectDataEngineeringKafka,
-    githubLink: "https://github.com/sulaimanfawwazak/Data-Engineering-Kafka",
+      "Website for my deparment's XII lustrum that involves many events, including independence day celebration, art performance, and competitions.",
+    // image: projectImage1,
+    image: projectLustrum,
+    githubLink: "https://lustrumdteti.id/",
   },
   {
     id: 5,
