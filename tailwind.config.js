@@ -9,12 +9,12 @@ export default {
       fontFamily: {
         jetbrains: ['"JetBrains Mono"', "monospace"]
       },
-      fontWeight: {
-        jetbrainsRegular: 400,
-        jetbrainsSemibold: 600,
-        jetbrainsBold: 700,
-        jetbrainsBlack: 900,
-      }
+      // fontWeight: {
+        // jetbrainsRegular: 400,
+        // jetbrainsSemibold: 600,
+        // jetbrainsBold: 700,
+        // jetbrainsBlack: 900,
+      // }
     },
   },
   plugins: [require('tailwind-scrollbar')],

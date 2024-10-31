@@ -71,7 +71,6 @@ export const PROJECTS = [
     name: "DTETI's XII Lustrum",
     description:
       "Website for my deparment's XII lustrum that involves many events, including independence day celebration, art performance, and competitions.",
-    // image: projectImage1,
     image: projectLustrum,
     githubLink: "https://lustrumdteti.id/",
   },

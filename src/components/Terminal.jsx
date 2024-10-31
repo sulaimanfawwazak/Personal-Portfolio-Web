@@ -2,15 +2,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 import {
-  FaXTwitter,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaDiscord,
-  FaInstagram,
+  FaInstagram
 } from "react-icons/fa6";
-
-import { SiGmail } from 'react-icons/si';
 
 const Terminal = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -81,7 +76,7 @@ const Terminal = () => {
 
   return (
     <div className="w-full">
-      <div className="overflow-hidden bg-gray-900 rounded-lg shadow-lg font-jetbrainsBold font-jetbrains ">
+      <div className="overflow-hidden font-black bg-gray-900 rounded-lg shadow-lg font-jetbrains">
         {/* Terminal Header */}
         <div className="px-4 py-2 bg-gray-800 border-b border-gray-700">
           <div className="flex items-center">
@@ -93,7 +88,7 @@ const Terminal = () => {
             </div>
             {/* Terminal Title */}
             <div className="container mx-auto -ml-4 text-center">
-              <h3 className="text-sm text-gray-100 font-jetbrainsBlack">Terminal</h3>
+              <h3 className="font-black text-gray-100 text-md font-jetbrains">Terminal</h3>
             </div>
           </div>
         </div>
@@ -101,7 +96,7 @@ const Terminal = () => {
         {/* Terminal Content */}
         <div 
           ref={terminalRef}
-          className="p-4 overflow-y-auto text-sm text-gray-100 h-96 font-jetbrains scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-700"
+          className="p-4 overflow-y-auto font-black text-gray-100 text-md h-96 font-jetbrains scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-700"
         >
           <div className="flex flex-col items-start whitespace-pre-wrap text-start">
             {steps.slice(0, currentStep).map((step, index) => (

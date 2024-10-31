@@ -1,7 +1,6 @@
 import React from 'react';
 import { HERO } from '../constants';
 import { motion } from 'framer-motion';
-import carlImg from '../assets/carl.jpeg';
 import Terminal from './Terminal';
 
 const Hero = () => {
